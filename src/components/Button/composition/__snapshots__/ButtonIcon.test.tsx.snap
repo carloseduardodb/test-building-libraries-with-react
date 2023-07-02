@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonIcon renders correctly with a given icon 1`] = `
+<div>
+  <svg
+    data-testid="mock-icon"
+  />
+</div>
+`;
+
+exports[`ButtonIcon renders correctly without an icon 1`] = `
+<div>
+  <svg
+    data-testid="mock-icon"
+  />
+</div>
+`;

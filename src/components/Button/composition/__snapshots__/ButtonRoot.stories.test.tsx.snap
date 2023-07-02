@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonRoot test_all_props_undefined 1`] = `
+<button
+  className="max-w-96 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  type="button"
+/>
+`;
+
+exports[`ButtonRoot test_custom_children 1`] = `
+<button
+  className="max-w-96 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  type="button"
+>
+  Custom Children
+</button>
+`;
+
+exports[`ButtonRoot test_custom_style_type_lg 1`] = `
+<button
+  className="max-w-120 bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded"
+  type="button"
+/>
+`;
+
+exports[`ButtonRoot test_custom_style_type_xs 1`] = `
+<button
+  className="max-w-48 bg-blue-400 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded"
+  type="button"
+/>
+`;
+
+exports[`ButtonRoot test_default_style_type 1`] = `
+<button
+  className="max-w-96 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  type="button"
+/>
+`;
+
+exports[`ButtonRoot test_empty_children_prop 1`] = `
+<button
+  className="max-w-96 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  type="button"
+/>
+`;
+
+exports[`ButtonRoot test_empty_children_prop:   1`] = `
+<button
+  className="max-w-96 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  type="button"
+>
+   
+</button>
+`;

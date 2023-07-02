@@ -1,11 +1,9 @@
-import React, { ButtonHTMLAttributes, ReactNode } from 'react';
+import { ButtonContent } from './composition/ButtonContent';
+import { ButtonIcon } from './composition/ButtonIcon';
+import { ButtonRoot } from './composition/ButtonRoot';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children?: ReactNode;
-}
-
-export const Button = ({ children, ...props }: ButtonProps) => (
-  <button type="button" {...props}>
-    {children}
-  </button>
-);
+export const Button = {
+  Root: ButtonRoot,
+  Icon: ButtonIcon,
+  Content: ButtonContent,
+};

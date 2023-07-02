@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonContent test_render_with_empty_text_prop 1`] = `
+<div
+  className="text-md"
+/>
+`;
+
+exports[`ButtonContent test_render_with_invalid_type_prop 1`] = `
+<div
+  className=""
+>
+  Hello World
+</div>
+`;
+
+exports[`ButtonContent test_render_with_md_type_prop 1`] = `
+<div
+  className="text-md"
+>
+  Hello World
+</div>
+`;
+
+exports[`ButtonContent test_render_with_text_and_type_props 1`] = `
+<div
+  className="text-md"
+>
+  Hello World
+</div>
+`;
+
+exports[`ButtonContent test_render_with_xs_type_prop 1`] = `
+<div
+  className="text-xs"
+>
+  Hello World
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
+>
+  Clicked this many times 0
+</button>
+`;

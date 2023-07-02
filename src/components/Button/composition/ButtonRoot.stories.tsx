@@ -1,12 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { withActions } from '@storybook/addon-actions/decorator';
-import { FaHome } from 'react-icons/fa';
-import React from 'react';
-import { ButtonRoot } from './composition/ButtonRoot';
-import { Button } from './index';
+import { ButtonRoot } from './ButtonRoot';
 
 export default {
-  title: 'Components/Button',
+  title: 'Compositions/Button/ButtonRoot',
   component: ButtonRoot,
   parameters: {
     actions: {
@@ -19,10 +16,5 @@ export default {
 export const Default: StoryObj<typeof ButtonRoot> = {};
 
 Default.args = {
-  children: (
-    <Button.Root>
-      <Button.Icon icon={FaHome} />
-      <Button.Content text="Click-Me" type="md" />
-    </Button.Root>
-  ),
+  children: 'Click-Me',
 };

@@ -1,34 +1,25 @@
-// import renderer from 'react-test-renderer';
-// import { Button } from './index';
+import renderer from 'react-test-renderer';
+import React from 'react';
+import { FaHome } from 'react-icons/fa';
+import { ButtonRoot } from './composition/ButtonRoot';
+import { Button } from './index';
 
-// describe('Button', () => {
-//   it('renders correctly', () => {
-//     const tree = renderer.create(<Button />).toJSON();
-//     expect(tree).toMatchSnapshot();
-//   });
+describe('Button', () => {
+  it('renders correctly with default props', () => {
+    const tree = renderer.create(<ButtonRoot />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-//   it('test_button_renders_with_custom_className_prop', () => {
-//     const tree: any = renderer
-//       .create(<Button className="custom-class" />)
-//       .toJSON();
-//     expect(tree).toMatchSnapshot();
-//     expect(tree.props.className).toEqual('custom-class');
-//   });
-
-//   it('test_button_renders_with_default_text', () => {
-//     const tree = renderer.create(<Button>Click-Me</Button>).toJSON();
-//     expect(tree).toMatchSnapshot();
-//   });
-
-//   it('test_button_renders_with_disabled_prop', () => {
-//     const tree: any = renderer.create(<Button disabled />).toJSON();
-//     expect(tree).toMatchSnapshot();
-//     expect(tree.props.disabled).toEqual(true);
-//   });
-
-//   it('test_button_renders_with_type_prop', () => {
-//     const tree: any = renderer.create(<Button type="submit" />).toJSON();
-//     expect(tree).toMatchSnapshot();
-//     expect(tree.props.type).toEqual('submit');
-//   });
-// });
+  it('renders correctly with custom children', () => {
+    const customChildren = (
+      <Button.Root>
+        <Button.Icon icon={FaHome} />
+        <Button.Content text="Click-Me" type="md" />
+      </Button.Root>
+    );
+    const tree = renderer
+      .create(<ButtonRoot>{customChildren}</ButtonRoot>)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
