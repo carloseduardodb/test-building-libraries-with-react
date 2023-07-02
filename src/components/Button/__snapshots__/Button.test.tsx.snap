@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `<button />`;
+
+exports[`Button test_button_renders_with_custom_className_prop 1`] = `
+<button
+  className="custom-class"
+/>
+`;
+
+exports[`Button test_button_renders_with_default_text 1`] = `
+<button>
+  Click-Me
+</button>
+`;
+
+exports[`Button test_button_renders_with_disabled_prop 1`] = `
+<button
+  disabled={true}
+/>
+`;
+
+exports[`Button test_button_renders_with_type_prop 1`] = `
+<button
+  type="submit"
+/>
+`;
