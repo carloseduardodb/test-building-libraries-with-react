@@ -50,7 +50,8 @@
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
-    }
+    },
+    "./dist/styles/backoffice.css": "./dist/styles/backoffice.css"
   },
   "files": [
     "dist"
